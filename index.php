@@ -11,3 +11,5 @@ echo $instance->test();
 $plus = new function_code();
 
 echo $plus->test();
+
+// ここまで
