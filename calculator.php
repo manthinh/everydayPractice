@@ -18,12 +18,12 @@ class function_code {
     }
 }
 class function_code {
-    public $plus = $inputNumber1 + $inputNumber2;
+    public $addition = $inputNumber1 + $inputNumber2;
     public function plus()
     {
-        $answer = $plus;
-        echo $this->plus;
-        echo $plus;
+        $answer = $addition;
+        echo $this->addition;
+        echo $addition;
     }
 }
 

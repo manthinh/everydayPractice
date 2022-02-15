@@ -15,4 +15,4 @@ echo $plus->test();
 // ここまで
 $instance = new function_code;
 
-echo $instance->plus();
+echo $instance->addition();
