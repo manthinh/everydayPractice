@@ -13,3 +13,6 @@ $plus = new function_code();
 echo $plus->test();
 
 // ここまで
+$instance = new function_code;
+
+echo $instance->plus();
