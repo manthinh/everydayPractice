@@ -1,11 +1,29 @@
 <?php
 $inputNumber1 = $argv[1];
 $inputNumber2 = $argv[2];
-$addition = $argv[3];
+$inputSymbol = $argv[3];
+
+$string = $inputSymbol;
+$symbol = "+,-,*,/";
+$pos = strpos($string,$symbol);
+
+if ($pos === false){
+    echo "$inputSymbol \n";
+};
+
+
+
+
 $addition = $inputNumber1 + $inputNumber2;
+$subtraction = $inputNumber1 - $inputNumber2;
+$multiplication = $inputNumber1 * $inputNumber2;
+$division = $inputNumber1 / $inputNumber2;
 echo "左辺: {$inputNumber1} \n";
 echo "右辺: {$inputNumber2} \n";
 echo "answer: {$addition} \n";
+echo "answer: {$subtraction} \n";
+echo "answer: {$multiplication} \n";
+echo "answer:{$division} \n";
 // クラス定義（実態がない）
 class function_code {
     // オブジェクト
