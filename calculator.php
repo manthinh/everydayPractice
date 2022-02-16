@@ -6,10 +6,12 @@ $inputSymbol = $argv[3];
 $string = $inputSymbol;
 $symbol = "+,-,*,/";
 $pos = strpos($string,$symbol);
-
+$replace = str_replace($inputSymbol,'',)
 if ($pos === false){
     echo "$inputSymbol \n";
-};
+}　else {
+
+}
 
 
 
