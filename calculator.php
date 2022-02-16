@@ -1,10 +1,11 @@
 <?php
 $inputNumber1 = $argv[1];
 $inputNumber2 = $argv[2];
-
+$addition = $argv[3];
+$addition = $inputNumber1 + $inputNumber2;
 echo "左辺: {$inputNumber1} \n";
 echo "右辺: {$inputNumber2} \n";
-
+echo "answer: {$addition} \n";
 // クラス定義（実態がない）
 class function_code {
     // オブジェクト
@@ -17,15 +18,24 @@ class function_code {
         echo $a;
     }
 }
-class function_code {
-    public $addition = $inputNumber1 + $inputNumber2;
-    public function plus()
-    {
-        $answer = $addition;
-        echo $this->addition;
-        echo $addition;
+// class function_code {
+    // public $addition = $inputNumber1 + $inputNumber2;
+//     public function plus()
+//     {
+//         $answer = $addition;
+//         echo $this->addition;
+//         echo $addition;
+//     }
+// }
+class calculate {
+    private $addition;
+    public function __construct($addition){
+        $this->addition = $addition;
     }
-}
+    public function getanswer(){
+
+    return $this->addition;}
+} 
 
 
 
