@@ -3,7 +3,6 @@ $inputNumber1 = $argv[1];
 $inputNumber2 = $argv[2];
 $inputSymbol = $argv[3];
 
-$string = $inputSymbol;
 $symbol = substr('+-*/',0,1);
 $symbol2 = substr('+-*/',1,1);
 $symbol3 = substr('+-*/',2,1);
