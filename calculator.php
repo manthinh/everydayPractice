@@ -41,9 +41,8 @@ if ($inputSymbol === $symbol) {
     echo "割り算:{$division} \n";
 }
 
-
-if($inputSymbol === [1-9]){
-    echo "足し算: {$addition} \n";
+if (empty($inputSymbol)) {
+    echo "足し算: {$addition} \n 引き算: {$subtraction} \n 掛け算: {$multiplication} \n 割り算: {$division} \n";
 }
 // クラス定義（実態がない）
 // class function_code {
