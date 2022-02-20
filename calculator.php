@@ -23,7 +23,7 @@ echo "第三引数: {$inputSymbol} \n";
 if ($inputSymbol === $symbol or $inputSymbol === $symbol2 or $inputSymbol === $symbol3 or $inputSymbol === $symbol4) {
     echo "$inputSymbol\n";
 } else {
-    echo "文字と0以外の数字を入れてください\n";
+    echo "加減乗除の記号を入れてください\n";
 } 
 
 // echo "answer: {$addition} \n";
@@ -43,6 +43,10 @@ if ($inputSymbol === $symbol) {
 
 if (empty($inputSymbol)) {
     echo "足し算: {$addition} \n 引き算: {$subtraction} \n 掛け算: {$multiplication} \n 割り算: {$division} \n";
+}
+
+if (is_numeric($inputNumber1) and is_numeric($inputNumber2) === [1-9]) {
+    echo "文字と０以外の数字を入れてください";
 }
 // クラス定義（実態がない）
 // class function_code {
