@@ -8,6 +8,28 @@ $inputSymbol = $argv[3];
 // $symbol3 = substr('+-*/',2,1);
 // $symbol4 = substr('+-*/',3,1);
 
+$validation = ctype_digit($inputNumber1);
+    // var_dump($validation);
+$validation2 = ctype_digit($inputNumber2);
+    // var_dump($validation2);
+
+if (!$validation && !$validation2 ){
+    return"文字と０以外の数字を入れてください\n";
+} 
+if ($inputSymbol === $symbol) {
+    echo "足し算: {$addition} \n";
+} else if ($inputSymbol === $symbol2){
+    echo "引き算: {$subtraction} \n";
+} else if ($inputSymbol === $symbol3){
+    echo "掛け算: {$multiplication} \n";
+} else if ($inputSymbol === $symbol4){
+    echo "割り算:{$division} \n";
+}
+
+if (empty($inputSymbol)) {
+    echo "足し算: {$addition} \n 引き算: {$subtraction} \n 掛け算: {$multiplication} \n 割り算: {$division} \n";
+}
+
 $symbol = "+";
 $symbol2 = "-";
 $symbol3 = "*";
@@ -31,23 +53,13 @@ if ($inputSymbol === $symbol or $inputSymbol === $symbol2 or $inputSymbol === $s
 // echo "answer: {$multiplication} \n";
 // echo "answer:{$division} \n";
 
-if ($inputSymbol === $symbol) {
-    echo "足し算: {$addition} \n";
-} else if ($inputSymbol === $symbol2){
-    echo "引き算: {$subtraction} \n";
-} else if ($inputSymbol === $symbol3){
-    echo "掛け算: {$multiplication} \n";
-} else if ($inputSymbol === $symbol4){
-    echo "割り算:{$division} \n";
-}
 
-if (empty($inputSymbol)) {
-    echo "足し算: {$addition} \n 引き算: {$subtraction} \n 掛け算: {$multiplication} \n 割り算: {$division} \n";
-}
 
-if (is_numeric($inputNumber1) and is_numeric($inputNumber2) === [1-9]) {
-    echo "文字と０以外の数字を入れてください";
-}
+// if (is_numeric($inputNumber1) and is_numeric($inputNumber2) === [1-9]) {
+//     echo "文字と０以外の数字を入れてください";
+// }
+
+
 // クラス定義（実態がない）
 // class function_code {
 //     // オブジェクト
