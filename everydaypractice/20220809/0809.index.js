@@ -1,2 +1,9 @@
-document.write('外部定義したJSからの書き込み');
 
+    function check(){
+    if (text_form.text.value == ""){
+    alert("テキストを入力してください");
+    return false;
+} else {
+    return true;
+}
+}
