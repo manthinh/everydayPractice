@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>JS練習:直接定義と間接定義</title>
+    <script type="text/javascript">
+        function check(){
+            if (text_form.text.value == ""){
+            alert("テキストを入力してください");
+            return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
 </head>
 <body>
 <h1>これは練習です</h1>
-<li>
-    <a>今日</a>
-</li>
-<li>
-    <a>明日</a>
-</li>
-<li>
-    <a>明後日</a>
-</li>
 
-<script>
-    document.write('直接定義のJSからの書き込み');
-</script>
-
+<script>document.write('直接定義のJSからの書き込み');</script>
 <script src="0809.index.js"></script>
+
+<form action="test.html" method="get" name="text_form">
+    テキスト:<input type="text" name="text">
+    <input type="submit" value="送信" onClick="return check();">
+</form>
+
 </body>
 </html>
